@@ -69,6 +69,7 @@ async function handleRequest(request) {
           `Bearer realm="https://${url.hostname}/v2/auth",service="cloudflare-docker-proxy"`
         );
       }
+      headers.set("Docker-Distribution-API-Version", "registry/2.0");
       return new Response(JSON.stringify({ message: "UNAUTHORIZED" }), {
         status: 401,
         headers: headers,
