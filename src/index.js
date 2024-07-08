@@ -7,17 +7,17 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.cfworker.pages.dev": dockerHub,
-  "quay.cfworker.pages.dev": "https://quay.io",
-  "gcr.cfworker.pages.dev": "https://gcr.io",
-  "k8s-gcr.cfworker.pages.dev": "https://k8s.gcr.io",
-  "k8s.cfworker.pages.dev": "https://registry.k8s.io",
-  "ghcr.cfworker.pages.dev": "https://ghcr.io",
-  "cloudsmith.cfworker.pages.dev": "https://docker.cloudsmith.io",
-  "ecr.cfworker.pages.dev": "https://public.ecr.aws",
+  "docker.G-cfworker.github.io": dockerHub,
+  "quay.G-cfworker.github.io": "https://quay.io",
+  "gcr.G-cfworker.github.io": "https://gcr.io",
+  "k8s-gcr.G-cfworker.github.io": "https://k8s.gcr.io",
+  "k8s.G-cfworker.github.io": "https://registry.k8s.io",
+  "ghcr.G-cfworker.github.io": "https://ghcr.io",
+  "cloudsmith.G-cfworker.github.io": "https://docker.cloudsmith.io",
+  "ecr.G-cfworker.github.io": "https://public.ecr.aws",
 
   // staging
-  "docker-staging.cfworker.pages.dev": dockerHub,
+  "docker-staging.G-cfworker.github.io": dockerHub,
 };
 
 function routeByHosts(host) {
